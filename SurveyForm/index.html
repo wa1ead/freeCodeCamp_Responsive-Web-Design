@@ -6,21 +6,85 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1 id="title">freeCodeCamp Survey Form</h1>
-    <p id="description">
-      Thank you for taking the time to help us improve the platform
-    </p>
-    <form id="survey-form">
-      <input id="name" type="text" placeholder="Name" required />
-      <input id="email" type="email" placeholder="Email" required />
-      <input
-        id="number"
-        type="number"
-        min="10"
-        max="99"
-        placeholder="Age"
-        required
-      />
+    <header>
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve the platform
+      </p>
+    </header>
+    <form id="survey-form" method="post">
+      <fieldset>
+        <label id="name-label">Name</label>
+        <input id="name" type="text" placeholder="Enter your Name" required />
+        <label id="email-label">Email</label>
+        <input
+          id="email"
+          type="email"
+          placeholder="Enter your Email"
+          required
+        />
+        <label id="number-label">Age</label>
+        <input
+          id="number"
+          type="number"
+          min="10"
+          max="99"
+          placeholder="Enter your Age"
+          required
+        />
+      </fieldset>
+      <legend>Gender</legend>
+      <label for="male">
+        <input id="male" name="gender" type="radio" value="1" for />MALE
+      </label>
+      <label for="female">
+        <input id="female" name="gender" type="radio" value="2" for />MALE
+      </label>
+      <fieldset>
+        <label for="bio"
+          >Bio
+          <textarea></textarea>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown"
+          >What is your Mindset
+          <select id="dropdown">
+            <option value="">(choose one)</option>
+            <option value="1">Employee</option>
+            <option value="2">Freelancer</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Speciality (required)</legend>
+        <label for="front-end"
+          ><input
+            id="front-end"
+            type="checkbox"
+            value="1"
+            name="speciality"
+            checked
+          />Front-end Developer</label
+        >
+        <label for="back-end"
+          ><input
+            id="back-end"
+            type="checkbox"
+            value="2"
+            name="speciality"
+          />Back-end Developer</label
+        >
+        <label for="full-stack"
+          ><input
+            id="full-stack"
+            type="checkbox"
+            value="3"
+            name="speciality"
+          />Full Stack Developer</label
+        >
+      </fieldset>
+      <button id="submit">Submit</button>
     </form>
   </body>
 </html>
