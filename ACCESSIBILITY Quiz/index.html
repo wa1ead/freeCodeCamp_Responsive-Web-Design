@@ -17,8 +17,29 @@
         src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg"
       />
       <h1>HTML/CSS Quiz</h1>
-      <nav></nav>
+      <nav>
+        <ul>
+          <li><a>INFO</a></li>
+          <li><a>HTML</a></li>
+          <li><a>CSS</a></li>
+        </ul>
+      </nav>
     </header>
-    <main></main>
+    <main>
+      <form
+        method="post"
+        action="https://freecodecamp.org/practice-project/accessibility-quiz"
+      >
+        <section role="region" aria-labelledby="student-info">
+          <h2 id="student-info">Who are you?</h2>
+        </section>
+        <section role="region" aria-labelledby="html-questions">
+          <h2 id="html-questions">What is HTML</h2>
+        </section>
+        <section role="region" aria-labelledby="css-questions">
+          <h2 id="css-questions">What is CSS?</h2>
+        </section>
+      </form>
+    </main>
   </body>
 </html>
