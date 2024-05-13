@@ -1,0 +1,41 @@
+* {
+  font-family: Rubik;
+}
+
+#title {
+  text-align: center;
+  font-weight: 500;
+}
+
+#desc {
+  text-align: center;
+  font-weight: 400;
+}
+
+#img-div {
+  background-color: grey;
+  width: 100%;
+  border-radius: 20px;
+}
+
+#image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#img-caption {
+  text-align: center;
+  color: yellow;
+  margin-top: 5px;
+  font-weight: 300;
+}
+
+h3 {
+  border-bottom: 3px solid;
+  margin-top: 40px;
+  margin-bottom: 0;
+  text-align: center;
+}
