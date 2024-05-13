@@ -37,8 +37,8 @@ nav {
 
 nav > ul {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   align-items: center;
   padding-inline-start: 0;
   margin-block: 0;
@@ -67,6 +67,12 @@ main {
   padding-top: 50px;
 }
 
+section {
+  width: 80%;
+  margin: 0 auto 10px auto;
+  max-width: 600px;
+}
+
 h1,
 h2 {
   font-family: Verdana, Tahoma;
@@ -74,6 +80,26 @@ h2 {
 
 h2 {
   border-bottom: 4px solid #dfdfe2;
+  margin-top: 0px;
+  padding-top: 60px;
+}
+
+.info {
+  padding: 10px 0 0 5px;
+}
+
+.formrow {
+  margin-top: 30px;
+  padding: 0px 15px;
+}
+
+input {
+  font-size: 16px;
+}
+
+.info input {
+  width: 50%;
+  text-align: left;
 }
 
 p::before {
