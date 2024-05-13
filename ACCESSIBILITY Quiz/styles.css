@@ -136,6 +136,37 @@ p::before {
   padding-bottom: 0;
 }
 
+.answers-list {
+  list-style: none;
+  padding: 0;
+}
+
+button {
+  display: block;
+  margin: 40px auto;
+  width: 40%;
+  padding: 15px;
+  font-size: 23px;
+  background: #d0d0d5;
+  border: 3px solid #3b3b4f;
+}
+
+footer {
+  background-color: #2a2a40;
+  display: flex;
+  justify-content: center;
+}
+
+footer,
+footer a {
+  color: #dfdfe2;
+}
+
+address {
+  text-align: center;
+  padding: 10px;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
