@@ -1,3 +1,9 @@
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
 body {
   background: #f5f6f7;
   color: #1b1b32;
@@ -164,7 +170,7 @@ footer a {
 
 address {
   text-align: center;
-  padding: 10px;
+  padding: 0.3em;
 }
 
 .sr-only {
