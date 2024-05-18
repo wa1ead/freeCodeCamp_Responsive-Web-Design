@@ -136,3 +136,17 @@ body {
   border-radius: 190%/190px 150px 0 0;
   border-color: black transparent transparent transparent;
 }
+
+.cat-mouth-line-left {
+  position: absolute;
+  top: 88px;
+  left: 74px;
+  transform: rotate(170deg);
+}
+
+.cat-mouth-line-right {
+  position: absolute;
+  top: 88px;
+  left: 91px;
+  transform: rotate(165deg);
+}
