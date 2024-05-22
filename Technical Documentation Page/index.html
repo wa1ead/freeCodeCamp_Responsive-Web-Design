@@ -4,7 +4,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
     <title>Technical Documentation</title>
-    <link rel="stylesheet" href="'./styles.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <main id="main-doc">
+      <section class="main-section" id="JavaScript">
+        <header>Javascript</header>
+        <p>
+          JavaScript is a versatile and widely-used programming language
+          primarily known for its role in web development
+        </p>
+        <p>
+          Uses of JavaScript Web Development: JavaScript is essential for
+          creating interactive web pages. Libraries and frameworks like React,
+          Angular, and Vue.js help developers build complex single-page
+          applications (SPAs). Server-Side Development: Node.js allows
+          JavaScript to be used on the server side, enabling the development of
+          scalable network applications. Popular frameworks include Express.js
+          and Koa.js. Mobile App Development: Frameworks like React Native and
+          Ionic use JavaScript to build mobile applications that run on both iOS
+          and Android. Desktop Applications: Electron allows developers to build
+          cross-platform desktop applications using JavaScript, HTML, and CSS.
+          Game Development: JavaScript can be used to create browser-based
+          games. Libraries like Phaser and frameworks like Three.js for 3D
+          graphics are popular choices.
+        </p>
+        <ul>
+          <h3>Basics :</h3>
+          <li>Variables</li>
+          <li>Data Types</li>
+          <li>Operators</li>
+          <li>Functions</li>
+          <li>Control Structures</li>
+          <li>Objects and Arrays</li>
+          <li>ES6 Features</li>
+          <li>Promises and Async/Await</li>
+        </ul>
+        <code>
+          // Function to change the text content of the message div function
+          changeText() { document.getElementById('message').textContent = 'Text
+          has been changed!'; } // Adding an event listener to the button to
+          call the changeText function on click
+          document.getElementById('changeTextButton').addEventListener('click',
+          changeText);
+        </code>
+      </section>
+      <section class="main-section" id="MERN Stack">
+        <header>MERN Stack</header>
+        <p>
+          The MERN stack is a popular technology stack used for building
+          full-stack web applications
+        </p>
+        <p>
+          How the MERN Stack Works Together Frontend (React) React handles the
+          user interface, creating dynamic and responsive components. React
+          interacts with the backend via HTTP requests (e.g., fetch or Axios) to
+          retrieve or send data. Backend (Express.js/Node.js) Express.js,
+          running on Node.js, sets up the server and defines routes for handling
+          client requests. These routes connect to controllers that handle the
+          logic for various endpoints. Database (MongoDB) The backend uses
+          MongoDB to store, retrieve, and manipulate data. MongoDB's flexible
+          schema makes it easy to handle changes in data structure without major
+          migrations.
+        </p>
+      </section>
+      <section class="main-section" id="MongoDb">
+        <header>MongoDb</header>
+        <p>Role: Database layer</p>
+        <p>Type: NoSQL database</p>
+        <p>
+          Features: Stores data in flexible, JSON-like documents, allowing for a
+          more agile and scalable approach compared to traditional relational
+          databases.
+        </p>
+        <code>const mongoose = require('mongoose');</code>
+      </section>
+      <section class="main-section" id="ExpressJs">
+        <header>ExpressJs</header>
+        <p>Role: Web framework for Node.js</p>
+        <p>
+          Features: Simplifies the process of building robust APIs and web
+          servers. It handles routing, middleware, and integrates with databases
+          like MongoDB.
+        </p>
+        <code>const express = require('express');</code>
+      </section>
+      <section class="main-section" id="ReactJs">
+        <header>ReactJs</header>
+        <p>Role: Frontend library</p>
+        <p>
+          Features: Provides a component-based architecture for building
+          interactive UIs. It uses a virtual DOM for efficient rendering and
+          state management.
+        </p>
+        <code>import React, { useState, useEffect } from 'react';</code>
+      </section>
+      <section class="main-section" id="NodeJs">
+        <header>NodeJs</header>
+        <p>Role: Server environment</p>
+        <p>
+          Features: Allows JavaScript to run on the server side. It's built on
+          the V8 JavaScript engine, providing fast and efficient execution.
+        </p>
+        <code>node server.js </code>
+      </section>
+    </main>
+  </body>
 </html>
