@@ -8,12 +8,9 @@
   --window-color3: #d98cb3;
   --window-color4: #8cb3d9;
 }
-
 * {
-  border: 1px solid black;
   box-sizing: border-box;
 }
-
 body {
   height: 100vh;
   margin: 0;
@@ -244,10 +241,10 @@ body {
   background-color: var(--window-color1);
   margin: 10%;
 }
+
 .fb5 {
   width: 10%;
   height: 33%;
-  background-color: var(--building-color2);
   position: relative;
   right: 10%;
   background: repeating-linear-gradient(
@@ -258,14 +255,27 @@ body {
     ),
     repeating-linear-gradient(
       90deg,
-      var(--building-color2) 0%,
+      var(--building-color2),
       var(--building-color2) 12%,
       var(--window-color2) 12%,
       var(--window-color2) 44%
     );
 }
+
 .fb6 {
   width: 9%;
   height: 38%;
-  background-color: var(--building-color3);
+  background: repeating-linear-gradient(
+      90deg,
+      var(--building-color3),
+      var(--building-color3) 10%,
+      transparent 10%,
+      transparent 30%
+    ),
+    repeating-linear-gradient(
+      var(--building-color3),
+      var(--building-color3) 10%,
+      var(--window-color3) 10%,
+      var(--window-color3) 30%
+    );
 }
