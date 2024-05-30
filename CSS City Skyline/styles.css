@@ -8,9 +8,11 @@
   --window-color3: #d98cb3;
   --window-color4: #8cb3d9;
 }
+
 * {
   box-sizing: border-box;
 }
+
 body {
   height: 100vh;
   margin: 0;
@@ -38,6 +40,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+
+.sky {
+  background: radial-gradient(
+    closest-corner circle at 15% 15%,
+    #ffcf33,
+    #ffcf33 20%,
+    #ffff66 21%,
+    #bbeeff 100%
+  );
 }
 
 /* BACKGROUND BUILDINGS - "bb" stands for "background building" */
@@ -278,4 +290,15 @@ body {
       var(--window-color3) 10%,
       var(--window-color3) 30%
     );
+}
+@media (max-width: 1000px) {
+  .sky {
+    background: radial-gradient(
+      closest-corner circle at 15% 15%,
+      #ffcf33 0%,
+      #ffcf33 20%,
+      #ffff66 21%,
+      #bbeeff 100%
+    );
+  }
 }
