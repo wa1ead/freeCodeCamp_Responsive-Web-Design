@@ -42,6 +42,11 @@ main {
   row-gap: 3rem;
 }
 
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
 .heading {
   grid-column: 2 / 3;
   display: grid;
@@ -51,4 +56,15 @@ main {
 
 .text {
   grid-column: 2 / 3;
+}
+
+.hero {
+  grid-column: 1 / -1;
+  position: relative;
+}
+
+.hero-title {
+  text-align: center;
+  color: orangered;
+  font-size: 8rem;
 }
