@@ -1,5 +1,6 @@
 :root {
   --penguin-face: white;
+  --penguin-picorna: orange;
 }
 
 body {
@@ -58,11 +59,7 @@ body {
 .penguin-head {
   width: 50%;
   height: 45%;
-  background: linear-gradient(
-    45deg,
-    gray,
-    rgb(239, 240, 228)
-  );
+  background: linear-gradient(45deg, gray, rgb(239, 240, 228));
   border-radius: 70% 70% 65% 65%;
   top: 10%;
   left: 25%;
@@ -137,7 +134,7 @@ body {
 
 .beak {
   height: 10%;
-  background-color: orange;
+  background-color: var(--penguin-picorna);
   border-radius: 50%;
 }
 
@@ -162,7 +159,7 @@ body {
 }
 
 .shirt div {
-  font-weight:  initial;
+  font-weight: initial;
   top: 22.5px;
   left: 12px;
 }
@@ -193,10 +190,23 @@ body {
   opacity: 70%;
 }
 
-.foot{
+.foot {
   width: 15%;
   height: 30%;
-  background-color: orange;
+  background-color: var(--penguin-picorna);
+  top: 85%;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.foot.left {
+  left: 25%;
+  transform: rotate(80deg);
+}
+
+.foot.right {
+  right: 25%;
+  transform: rotate(-80deg);
 }
 
 .ground {
