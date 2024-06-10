@@ -204,6 +204,10 @@ body {
   left: 5%;
   transform-origin: top left;
   transform: rotate(130deg) scaleX(-1);
+  animation-name: wave;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 .arm.right {
@@ -213,6 +217,18 @@ body {
 }
 
 @keyframes wave {
+  10% {
+    transform: rotate(110deg) scaleX(-1);
+  }
+  20% {
+    transform: rotate(130deg) scaleX(-1);
+  }
+  30% {
+    transform: rotate(110deg) scaleX(-1);
+  }
+  40% {
+    transform: rotate(130deg) scaleX(-1);
+  }
 }
 
 .foot {
